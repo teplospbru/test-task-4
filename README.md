@@ -1,4 +1,4 @@
-# Приложение Social App
+# Приложение Note App With Tags
 
 ![Иллюстрация к проекту](https://github.com/teplospbru/test-task-4/blob/main/Note-app-with-tags.png)
 
