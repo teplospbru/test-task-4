@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,34 +10,15 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Note App</title>
+    <svg display="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 48 48" id="add-note-icon-48x48"><path d="M18.058 20.335V39.55M8.45 29.942h19.214M25.993 1L47 22.007M25.993 1v15.925a5.071 5.071 0 005.082 5.082H47m0 0v19.91A5.071 5.071 0 0141.918 47H6.082A5.071 5.071 0 011 41.918V6.082A5.071 5.071 0 016.082 1h19.91" stroke-width="2" stroke-linecap="round"/></symbol><symbol viewBox="0 0 48 48" id="delete-icon-48x48"><path d="M33.654 19.365v20.754M24 19.365v20.754m-9.654-20.754v20.754m26.547-20.754v22.088c0 3.073-2.169 5.547-4.863 5.547H11.97c-2.694 0-4.863-2.474-4.863-5.547V19.365M29.36 6.475c0-1.957-1.021-3.765-2.68-4.743a5.26 5.26 0 00-5.358 0c-1.658.978-2.68 2.786-2.68 4.742m-11.025.498h32.768c2.233 0 4.03 1.846 4.03 4.139 0 2.292-1.797 4.138-4.03 4.138H7.616c-2.233 0-4.03-1.846-4.03-4.138 0-2.293 1.797-4.14 4.03-4.14z" stroke-width="2" stroke-linecap="round"/></symbol><symbol viewBox="0 0 48 48" id="edit-icon-48x48"><path d="M43.204 24.07v18.267A4.653 4.653 0 0138.541 47H5.663A4.653 4.653 0 011 42.337V9.459a4.653 4.653 0 014.663-4.663H23.93m9.527 9.746l-10.02 10.02m-9.995-1.467l-2.66 14.124 14.123-2.661M40.77 2.362a4.653 4.653 0 00-6.595 0L31.99 4.548 43.452 16.01l2.186-2.186a4.653 4.653 0 000-6.594zm-8.78 2.186L43.451 16.01 24.905 34.558 13.442 23.095z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 48 48" id="exit-icon-48x48"><g stroke-width="2" stroke-linecap="round"><path d="M11.269 24H47M22.046 34.778L11.27 24m10.777-10.778L11.27 24"/><path d="M47 34.572V42c0 2.77-2.23 5-5 5H6c-2.77 0-5-2.23-5-5V6c0-2.77 2.23-5 5-5h36c2.77 0 5 2.23 5 5h0v7.428" stroke-linejoin="round"/></g></symbol><symbol viewBox="0 0 48 48" id="save-icon-48x48"><path d="M29.52 39.617H9.076m20.444-5.358H9.076m20.444-5.357H9.076M25.82 5.313v7.245M9.076 1H30.92v15.871H9.076zM47 16.632V45.32C47 46.25 46.25 47 45.32 47H2.68C1.75 47 1 46.25 1 45.32V2.68C1 1.75 1.75 1 2.68 1h28.688z" stroke-width="2" stroke-linecap="round"/></symbol><symbol viewBox="0 0 48 48" id="setup-icon-48x48"><path d="M24 41.815a17.917 17.856 0 003.991-.443l4.37 3.985a22.965 22.887 0 006.013-3.464l-1.28-5.771a17.854 17.793 0 004-6.887l5.645-1.778a23.214 23.135 0 000-6.917l-5.646-1.779a17.854 17.793 0 00-3.999-6.89l1.28-5.764a22.965 22.887 0 00-6.013-3.464l-4.37 3.978a17.806 17.745 0 00-7.982 0l-4.37-3.978a22.965 22.887 0 00-6.013 3.464l1.28 5.763a17.854 17.793 0 00-4 6.888l-5.645 1.778a23.21 23.131 0 000 6.917l5.646 1.778a17.854 17.793 0 003.998 6.891l-1.28 5.763a22.965 22.887 0 006.014 3.464l4.37-3.977a17.917 17.856 0 003.991.443zm-8.165-17.819a8.16 8.133 0 118.16 8.133 8.16 8.133 0 01-8.16-8.133z" stroke-width="2" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 48 48.002" id="tag-icon-48x48"><path d="M35.32 9.1a3.58 3.581 45.034 013.581 3.58 3.58 3.581 45.034 01-3.581 3.582 3.58 3.581 45.034 01-3.58-3.58A3.58 3.581 45.034 0135.32 9.1zM2.066 23.672a3.645 3.645 0 000 5.166l17.1 17.1a3.645 3.645 0 005.166 0l21.562-21.563c.365-.365.635-.786.814-1.234.188-.441.293-.929.293-1.44V4.653A3.644 3.644 0 0043.347 1H26.298c-.506 0-.987.103-1.424.288l-.012.005c-.45.179-.871.45-1.236.815z" stroke-width="2" stroke-linecap="round"/></symbol></svg>
+</head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root">
+            
+        </div>
+    </body>
 </html>
